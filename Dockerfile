@@ -1,9 +1,9 @@
 ARG PIHOLE_BASE=pihole/pihole:master-arm64-buster
 FROM $PIHOLE_BASE
 
-ARG PIHOLE_ARCH=aarch64
+ARG PIHOLE_ARCH=amd64
 ENV PIHOLE_ARCH "${PIHOLE_ARCH}"
-ARG S6_ARCH=amd64
+ARG S6_ARCH=aarch64
 ARG S6_VERSION=v2.1.0.2
 ENV S6OVERLAY_RELEASE "https://github.com/just-containers/s6-overlay/releases/download/${S6_VERSION}/s6-overlay-${S6_ARCH}.tar.gz"
 

@@ -1,4 +1,4 @@
-ARG PIHOLE_BASE=hypernode/buster
+ARG PIHOLE_BASE=microdeb/buster
 FROM $PIHOLE_BASE
 
 ARG PIHOLE_ARCH=amd64

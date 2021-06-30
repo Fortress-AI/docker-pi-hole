@@ -1,4 +1,4 @@
-ARG PIHOLE_BASE=debian/buster
+ARG PIHOLE_BASE=hypernode/buster
 FROM $PIHOLE_BASE
 
 ARG PIHOLE_ARCH=amd64

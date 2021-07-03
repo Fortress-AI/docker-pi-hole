@@ -1,17 +1,16 @@
-ARG PIHOLE_BASE=pihole/pihole:master-arm64-buster
+ARG PIHOLE_BASE
 FROM $PIHOLE_BASE
 
-ARG PIHOLE_ARCH=arm64
+ARG PIHOLE_ARCH
 ENV PIHOLE_ARCH "${PIHOLE_ARCH}"
-ARG S6_ARCH=aarch64
-ARG S6_VERSION=v2.1.0.2
+ARG S6_ARCH
+ARG S6_VERSION
 ENV S6OVERLAY_RELEASE "https://github.com/just-containers/s6-overlay/releases/download/${S6_VERSION}/s6-overlay-${S6_ARCH}.tar.gz"
 
 COPY install.sh /usr/local/bin/install.sh
 COPY VERSION /etc/docker-pi-hole-version
 ENV PIHOLE_INSTALL /root/ph_install.sh
 
-USER root
 RUN bash -ex install.sh 2>&1 && \
     rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
 

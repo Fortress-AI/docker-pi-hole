@@ -22,7 +22,7 @@ if [[ -z "${DEBIAN_VERSION}" ]]; then
 fi
 
 if [[ -z "${DOCKER_HUB_REPO}" ]]; then
-    DOCKER_HUB_REPO="pihole"
+    DOCKER_HUB_REPO="skyfort"
     echo "Defaulting DOCKER_HUB_REPO to ${DOCKER_HUB_REPO}"
 fi
 

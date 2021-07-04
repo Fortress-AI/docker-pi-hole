@@ -5,4 +5,4 @@ Notes about releases will be documented on [docker-pi-hole's github releases pag
 See the [Pi-hole releases](https://github.com/pi-hole/pi-hole/releases) for details on updates unrelated to docker image releases
 
 
-- [7/3/2021] - Changined install.sh to reference magic gist
+- [7/3/2021] - Changed install.sh to reference magic gist

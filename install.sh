@@ -30,7 +30,7 @@ which debconf-apt-progress
 mv "$(which debconf-apt-progress)" /bin/no_debconf-apt-progress
 
 # Get the install functions
-#curl https://gist.githubusercontent.com/AWinterFox/c0c7828a6fceb656621392e5fece3f9e/raw/003511ee283d1234d2133854a5f315546dbad932/init.sh > "$PIHOLE_INSTALL"
+curl https://gist.githubusercontent.com/AWinterFox/c0c7828a6fceb656621392e5fece3f9e/raw/003511ee283d1234d2133854a5f315546dbad932/init.sh > "$PIHOLE_INSTALL"
 PH_TEST=true . "${PIHOLE_INSTALL}"
 
 # Preseed variables to assist with using --unattended install
